@@ -1,0 +1,156 @@
+* {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.breaker {
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+body {
+    color: white;
+}
+
+header {
+    background-color: transparent;
+    top: 0px;
+    position: sticky;
+}
+
+nav {
+    background-color: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: right;
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+}
+
+ul {
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+li {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: auto;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: #EE3351;
+}
+
+.title {
+    font-family: 'Libre Baskerville', serif, !important;
+    font-size: 65px;
+    text-align: center;
+    align-items: center;
+}
+
+.txt1 {
+    text-align: center;
+    margin-left: 10px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.container {
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+
+.img {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transition: 0.25;
+}
+
+.image:hover img {
+    transform: scale(1.1)
+}
+
+h1 {
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    background: black;
+    color: #EE3351;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25 ease-in-out;
+}
+
+.image:hover h1 {
+    opacity: 0.5;
+}
+
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width:425px) {
+    h1 {
+        font-size: 12px;
+    }
+    .container {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width:375px) {
+    h1 {
+        font-size: 12px;
+    }
+    .container {
+        column-count: 15px;
+    }
+}
+
+footer p {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
